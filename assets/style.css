@@ -1,0 +1,147 @@
+body {
+	margin-top: 30px;
+	background-color: #333;
+}
+
+a {
+	color: #009FDA;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #00BAFF;
+}
+
+.principal {
+	width: 980px;
+	height: 540px;
+	margin: auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 4px;
+}
+
+.logo {
+	float: left;
+	width: 100%;
+	height: 40px;
+}
+
+.logo img {
+	float: left;
+	width: 40px;
+	height: 40px;
+}
+
+.logo h3 {
+	float: left;
+	margin: 8px 10px 0;
+	color: #009FDA;
+	text-shadow: 1px 1px #000;
+}
+
+.conteudo {
+	float: left;
+	width: 100%;
+	height: 450px;
+	margin-top: 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.rodape {
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	word-spacing: 10px;
+	font-size: 12px;
+}
+
+.menu {
+	position: absolute;
+	width: 150px;
+	height: auto;
+	top: 0;
+	right: 0;
+}
+
+.menu ul {
+	margin-top: 60px;
+	list-style-type: none;
+}
+
+.menu ul li {
+	margin-top: 30px;
+}
+
+.menu a {
+	text-decoration: none;
+}
+
+.modulo {
+	float: left;
+	position: relative;
+	width: 705px;
+	padding-left: 15px;
+}
+
+.modulo center {
+	margin-top: 18px;
+}
+
+.carregar {
+	float: left;
+	margin-top: 15px;
+	width: 705px;
+	display: block;
+}
+
+.carregar h4, h3 {
+	color: #666;
+	margin-top: 15px;
+}
+
+.carregar p {
+	color: #666;
+}
+
+.lista-menu {
+	float: left;
+	width: 240px;
+	height: 440px;
+	padding: 5px;
+	background-color: #428bca;
+	border-radius: 4px;
+}
+
+.lista-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.lista-menu ul li {
+	text-align: center;
+	font-weight: bold;
+	padding: 8px;
+	border-bottom: 1px solid white;
+}
+
+.lista-menu ul li a {
+	color: white;
+}
+
+.lista-menu h4 {
+	margin-left: 10px;
+	color: #fff;
+	font-size: 12px;
+	text-shadow: 1px 1px #222;
+}
+
+.carregar img {
+	height: 120px;
+}
+
+.center {
+	text-align: center;
+}
