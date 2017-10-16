@@ -5,11 +5,11 @@ class Query {
 	private $connection;
 
 	private function __construct() {
-		$this->connection = Database::getInstance()->getConnection();
+		$this->connection = Database::getInstance()->getConnection(); // don't work :(
 	}
 
 	public function lista () {
-		$connection = Database::getInstance()->getConnection();
+		$connection = self::getConnection();
 		$result = $connection->query("SELECT * FROM produtos");
 
 		if ($result) {
@@ -30,7 +30,7 @@ class Query {
 		$nome = $_POST['nome'];
     $descricao = $_POST['descricao'];
 
-		$connection = Database::getInstance()->getConnection();
+		$connection = self::getConnection();
 		$result = $connection->query("INSERT INTO produtos (nome, descricao) VALUES ('$nome', '$descricao')");
 
 		if ($result) {
@@ -47,12 +47,16 @@ class Query {
 
     $id = $_GET['id'];
 
-    $connection = Database::getInstance()->getConnection();
+    $connection = self::getConnection();
     $result = $connection->query("DELETE FROM produtos WHERE id = '$id'");
 
 		if ($result) {
 			return true;
 		}
+  }
+
+  private function getConnection () {
+    return Database::getInstance()->getConnection();
   }
 
 }

@@ -6,10 +6,10 @@ class Database
     private $connection;
 
     private $host = 'localhost';
-    private $username = 'id3172379_root';
+    private $username = 'root';
     private $password = '123456';
 
-    private $db = 'id3172379_erp';
+    private $db = 'erp';
 
     private static $instance;
 
