@@ -22,7 +22,4 @@ elseif($_GET['action'] == "deletar")
     header('location: index.php?page=lista');
   }
 
-} 
-elseif ($_GET['editar']) {
-  $query = Query::editar();
 }
