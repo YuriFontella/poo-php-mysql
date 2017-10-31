@@ -9,8 +9,18 @@ if($_GET['action'] == "registro")
 
   if ($query) {
     header('location: index.php?page=lista');
+
   } else {
-    header('location: index.php?page=registro&status=true');
+
+    $id = $_POST['id'];
+
+    if($id) {
+      header('location: index.php?page=editar&status=true&id=' . $id);
+
+    } else {
+      header('location: index.php?page=registro&status=true');
+
+    }
   }
 }
 
