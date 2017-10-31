@@ -25,8 +25,8 @@
 						</a>
 					</li>
 					<li>
-						<a href="?page=cadastrar">
-							Cadastrar um Produto
+						<a href="?page=registro">
+							Registrar um Produto
 						</a>
 					</li>
 				</ul>
@@ -35,7 +35,7 @@
 			<div class="modulo">
 				<?php 
 					if (isset($_GET['page'])):
-					 require_once('./sections/' . $_GET['page'] . '.php');
+						require_once('./sections/' . $_GET['page'] . '.php');
 				?>
 
 				<?php else: ?>

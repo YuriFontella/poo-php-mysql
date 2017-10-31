@@ -18,6 +18,7 @@
 			<tr>
 				<td><b><?php echo $row['nome'] ?></b></td>
 				<td><i><?php echo $row['descricao'] ?></i></td>
+				<td><a href="?page=editar&id=<?php echo $row['id'] ?>">Editar</a></td>
 				<td><a href="produto.php?action=deletar&id=<?php echo $row['id'] ?>" onclick="return confirm('Você tem certeza?');">Deletar</a></td>
 			</tr>
 
